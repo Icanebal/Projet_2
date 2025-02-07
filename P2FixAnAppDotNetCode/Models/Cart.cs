@@ -54,9 +54,13 @@ namespace P2FixAnAppDotNetCode.Models
         /// </summary>
         public double GetAverageValue()
         {
-            // TODO implement the method
-            return 0.0;
+            if (_cartLines.Count == 0)
+            {
+                return 0.0;
+            }
+            return GetTotalValue() / _cartLines.Sum(l => l.Quantity);
         }
+
 
         /// <summary>
         /// Looks after a given product in the cart and returns if it finds it
