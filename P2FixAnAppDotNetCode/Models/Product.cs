@@ -17,7 +17,7 @@
 
     public string Description { get; set; }
 
-    public string Details { get; set; }
+    // public string Details { get; set; } => Useless
 
     public int Stock { get; set; }
 
