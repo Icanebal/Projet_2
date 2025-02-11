@@ -49,9 +49,7 @@ namespace P2FixAnAppDotNetCode.Models
             return _cartLines.Sum(l => l.Product.Price * l.Quantity);     
         }
 
-        /// <summary>
-        /// Get average value of a cart
-        /// </summary>
+
         public double GetAverageValue()
         {
             if (_cartLines.Count == 0)
